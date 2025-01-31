@@ -29,7 +29,7 @@ const AppContent = () => {
       <div style={{ display: "flex" }}>
         <div style={{ flexGrow: 1, padding: "20px" }}>
           <Routes>
-            <Route path="/Home" element={<HomePage />} />
+            <Route path="/" element={<HomePage />} />
             <Route path="/vegetarian" element={<Vegetarian />} />
             <Route path="/non-vegetarian" element={<NonVegetarian />} />
             <Route path="/diets" element={<Diets/>} />

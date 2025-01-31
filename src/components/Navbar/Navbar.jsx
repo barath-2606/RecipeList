@@ -108,8 +108,15 @@ export default function Navbar({ open }) {
     // const handleDrawerClose = () => setOpen(false);
 
     const handleBtnClick = (text) => {
-        const routePath = `/${text.toLowerCase().replace(" ", "-")}`;
-        navigate(routePath);
+        if(text=="Home"){
+            const routePath = `/`;
+            navigate(routePath);
+        }else{
+            const routePath = `/${text.toLowerCase().replace(" ", "-")}`;
+            navigate(routePath);
+        }
+        
+        
     };
 
     // const handleSearchBtn = () => {
