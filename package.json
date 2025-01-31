@@ -1,9 +1,9 @@
 {
+  "homepage": "https://github.com/barath-2606/RecipeList.git",
   "name": "RecipeList",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/barath-2606/RecipeList.git",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
