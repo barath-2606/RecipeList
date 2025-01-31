@@ -20,6 +20,8 @@ export default function FoodCardComp({ recipeDetails }) {
 
     const [open, setOpen] = useState(false)
 
+    const [isFvrt, setIsFvrt] = useState(false)
+
     const handleOpenClose = () => {
         setOpen(!open)
     }
@@ -74,8 +76,8 @@ export default function FoodCardComp({ recipeDetails }) {
                     </Box>
                 </CardContent>
                 <CardActions sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', backgroundColor: '#3B6790', padding: '0px 5px' }} disableSpacing>
-                    <IconButton aria-label="add to favorites">
-                        <FavoriteIcon sx={{ fill: 'white' }} />
+                    <IconButton aria-label="add to favorites" onClick={()=> setIsFvrt(!isFvrt)}>
+                        <FavoriteIcon sx={{ fill: isFvrt ? "gold":"white" }} />
                     </IconButton>
                     <Button variant="contained" size="small" sx={{ backgroundColor: '#EFB036' }} onClick={handleOpenClose} disableElevation>
                         View
